@@ -1,0 +1,204 @@
+/* 一般設定 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 微軟正黑體;
+    font: normal 14px/25px;
+}
+
+li {
+    list-style: none;
+}
+
+/* 上方Banner設定 */
+.banner .background_img {
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    vertical-align: middle;
+}
+
+.banner img {
+    opacity: 0.8;
+}
+
+.banner {
+    position: relative;
+}
+
+.banner .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.banner .title h1 {
+    top: 45%;
+    font-size: 48px;
+    font-weight: bold;
+    position: absolute;
+    color: black;
+}
+
+.banner .title h2 {
+    top: 55%;
+    margin-top: 10px;
+    font-size: 32px;
+    position: absolute;
+    color: #717171;
+    
+}
+
+/* 頭像(未使用) */
+.banner .personal_img {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: absolute;
+    top: 80%;
+}    
+
+/* 頭像(未使用) */
+.banner .personal_img img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    border: 8px solid #edeff5;
+}
+
+/* 自我介紹 */
+.self_content {   
+    width: 100%;
+    height: 800px;
+    z-index: -1;
+}
+
+.self_content img {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.self_content .box2 {
+    height: 100%;
+    background-color: #FFFFFF;
+    width: 45%;
+    float: left;
+}
+.self_content h2 {
+    display: inline-block;
+    font-size: 38px;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-bottom: 30px;
+    border-bottom: 5px solid black;
+}
+
+.self_content .box2 p {
+    font-size: 20px;
+    line-height:30px;
+    display: inline-block;
+    margin-top: 50px;
+    margin-left: 50px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    background-image: url(../imgs/bottom_background_img1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* Slides */
+.mySlides {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 200px;
+    text-align: center;
+}
+
+/* h3格式調整 */
+.mySlides h3 {
+    padding-bottom: 30px;
+    display: inline-block;
+    border-bottom: 2px solid cornflowerblue; 
+    height: 30%;
+    z-index: 100;
+}
+
+/* p格式調整 */
+.mySlides p {
+    height: 60%;
+    margin-top: 20px;
+    display: inline-block;
+    z-index: 100;
+}
+
+
+
+/* 前後按鈕設計 */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #888;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 1px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: #717171;
+    color: white;
+}
+
+/* dot container settings */
+.dot-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #F5F6F8;
+}
+
+/* 下方dot設定 */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    margin: 0 auto;
+}
+
+/* slides_h3/p增添顏色 */
+.mySlides h3 {color: cornflowerblue;}
+.Answer {color: #8E9090; font-weight: bold;}
